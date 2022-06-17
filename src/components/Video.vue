@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import HLSCore from '@cloudgeek/playcore-hls';
 const options = {
 	sources: [

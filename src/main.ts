@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createApp } from 'vue';
 import App from './App.vue';
 import Vue3VideoPlayer from '@cloudgeek/vue3-video-player';
