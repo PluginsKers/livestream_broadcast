@@ -15,7 +15,7 @@ export default {
 	mounted() {
 		setTimeout(() => {
 			this.loaded = true;
-		}, 1000);
+		}, 1200);
 	},
 }
 
