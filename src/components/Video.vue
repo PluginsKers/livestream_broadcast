@@ -4,7 +4,7 @@ import HLSCore from '@cloudgeek/playcore-hls';
 const options = {
 	sources: [
 		{
-			src: "//stream.i5res.com:8080/hls/zj520.m3u8",
+			src: "//stream.i5res.com/hls/zj520.m3u8",
 			type: "application/x-mpegURL",
 		},
 	]
