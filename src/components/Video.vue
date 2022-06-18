@@ -1,20 +1,21 @@
 <script setup lang="ts">
-// @ts-nocheck
 import HLSCore from '@cloudgeek/playcore-hls';
-const options = {
+import { reactive } from 'vue';
+
+const options = reactive({
 	sources: [
 		{
-			src: "//stream.i5res.com/hls/zj520.m3u8",
+			src: "https://stream.i5res.com/hls/zj520.m3u8",
 			type: "application/x-mpegURL",
 		},
 	]
-}
+});
 
 </script>
 
 <template>
 	<div class="player-wrap">
-		<vue3-video-player :core="HLSCore" :src="options.sources" title="直播间">
+		<vue3-video-player :core="HLSCore" :options="options" :src="options.sources" title="大猫咪的直播间">
 		</vue3-video-player>
 	</div>
 </template>

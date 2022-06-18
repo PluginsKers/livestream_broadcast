@@ -10,9 +10,11 @@
   "dependencies": {
     "@cloudgeek/playcore-hls": "^0.1.7",
     "@cloudgeek/vue3-video-player": "^0.3.10",
+    "video.js": "^7.19.2",
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "@types/video.js": "^7.3.40",
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",

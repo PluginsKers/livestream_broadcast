@@ -1,28 +1,23 @@
-<script lang="ts">
+<script setup lang="ts">
 // @ts-nocheck
 import Video from './components/Video.vue';
+import { reactive, onMounted } from 'vue';
 
-export default {
-	components: {
-		Video,
-	},
+let loaded = reactive({
+	value: false,
+});
 
-	data() {
-		let loaded: boolean = false;
-		return { loaded };
-	},
-
-	mounted() {
-		setTimeout(() => {
-			this.loaded = true;
-		}, 1200);
-	},
-}
+onMounted(() => {
+	setTimeout(() => {
+		console.log('loaded');
+		loaded.value = true;
+	}, 1000);
+});
 
 </script>
 
 <template>
-	<div class="loading" v-if="!loaded">加载中...</div>
+	<div class="loading" v-if="!loaded.value">加载中...</div>
 	<Video v-else />
 </template>
 
